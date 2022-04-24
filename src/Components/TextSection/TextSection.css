@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root{
+
+    /* Primary Color */
+  --orange :  hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+   /* Neutral Color */
+
+   --very-dark-blue: hsl(220, 13%, 13%);
+   --Dark-grayish-blue: hsl(219, 9%, 45%);
+   --Grayish-blue: hsl(220, 14%, 75%);
+   --Light-grayish-blue: hsl(223, 64%, 98%);
+   --White: hsl(0, 0%, 100%);
+   --Black /*(with 75% opacity for lightbox background)*/: hsl(0, 0%, 0%);
+}
+
+
+.text-container{
+    padding: 10px;
+    padding-top: 50px;
+   
+   
+}
+
+.text{
+    padding-right: 90px;
+    
+}
+
+.text h5 {
+    color: var(--orange);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+.text h1 {
+    color: var(--very-vark-blue);
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.text p {
+    color: var(--Grayish-blue);
+    margin-bottom: 30px;
+    padding-right: 100px;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.prices{
+    font-family:'Kumbh Sans' , sans-serif  ;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.prices .current{
+    color: var(--very-vark-blue);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.prices .copon{
+
+   
+    width: max-content;
+    height: max-content;
+    align-items:flex-end;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    color: var(--orange);
+    background-color: var(--Pale-orange);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 15%;
+}
+.prices .old-price{
+    color: var(--Grayish-blue);
+    text-decoration: line-through;
+}
+
+
+.adding-to-cart {
+
+    height: 50px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    padding-right: 110px;
+
+} 
+.counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Light-grayish-blue);
+  border-radius: 10px;
+
+
+}
+
+.number{
+    background-color: var(--Light-grayish-blue);
+}
+
+.up ,.number , .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    font-weight: 700;
+    font-size: large;
+    text-align: center;
+    border-style: none;
+    padding: 15px;
+    
+
+}
+
+
+
+.up:hover , .down:hover{
+cursor: pointer;
+transform: scale(1.5);
+
+}
+
+.add-cart-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--orange);
+    color: var(--White);
+    fill: var(--White);
+    font-family: 'Kumbh Sans' , sans-serif ;
+    font-weight: 700;
+    font-size: medium;
+    box-shadow: 0px 10px 15px var(--Pale-orange);
+
+}
+
+
+.add-cart-btn:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.add-cart-btn-icon{
+    margin-right: 20px;
+  
+}

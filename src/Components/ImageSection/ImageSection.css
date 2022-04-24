@@ -1,0 +1,76 @@
+:root{
+
+    /* Primary Color */
+  --orange :  hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+   /* Neutral Color */
+
+   --very-dark-blue: hsl(220, 13%, 13%);
+   --Dark-grayish-blue: hsl(219, 9%, 45%);
+   --Grayish-blue: hsl(220, 14%, 75%);
+   --Light-grayish-blue: hsl(223, 64%, 98%);
+   --White: hsl(0, 0%, 100%);
+   --Black /*(with 75% opacity for lightbox background)*/: hsl(0, 0%, 0%);
+}
+
+
+.image-container{
+    position: relative;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 50px;
+    
+    
+    overflow: hidden;
+   
+    
+    
+}
+
+
+
+.active-product {
+    position: absolute;
+    height: 75%;
+    padding: 10px;
+    border-radius: 30px;
+  
+}
+
+
+
+
+
+.thumbnail-list {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+
+}  
+
+.thumbnail-list img{
+    border-radius: 15px;
+    height: 70%;
+    width: 25%;
+    margin-right: 40px;
+    transition: 200ms;
+}
+.thumbnail-list img:last-child{
+   
+    margin-right: 0px;
+}
+
+.thumbnail-list img:hover{
+    opacity: .7;
+    border: 2px solid var(--orange);
+ 
+ 
+}

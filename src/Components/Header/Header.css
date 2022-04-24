@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root{
+
+    /* Primary Color */
+  --orange :  hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+   /* Neutral Color */
+
+   --very-dark-blue: hsl(220, 13%, 13%);
+   --Dark-grayish-blue: hsl(219, 9%, 45%);
+   --Grayish-blue: hsl(220, 14%, 75%);
+   --Light-grayish-blue: hsl(223, 64%, 98%);
+   --White: hsl(0, 0%, 100%);
+   --Black /*(with 75% opacity for lightbox background)*/: hsl(0, 0%, 0%);
+}
+
+
+ul ,li {
+   
+    list-style: none;
+}
+button{
+    border: none;
+    background-color: none;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Grayish-blue);
+  
+
+   
+
+}
+
+.header-right{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    padding: 0px;
+    margin-bottom: 0;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.menu-item{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Kumbh Sans' sans-serif;
+    
+    
+    
+    
+}
+.menu-item:hover{
+    padding-bottom: 55px;
+    border-bottom:  5px solid var(--orange);
+    cursor: pointer;
+    color: var(--very-dark-blue);
+    font-weight: bold;
+}
+
+.icons{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.avatar:hover{
+    border: 3px solid var(--orange);
+    
+}
+
+.avatar-image{
+    height: 50px;
+    width: 50px;
+}
+
+.cart-icon{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.cart-value{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    height: .9rem;
+    width: 1.3rem;
+    border-radius: 30px;
+    background-color: var(--orange);
+    color: var(--White);
+    font-size: 12px;
+}
+
+.cart-value-hidden{
+    display: hidden;
+}
